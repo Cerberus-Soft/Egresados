@@ -15,41 +15,35 @@
             ->prependStylesheet($this->basePath('css/style.css'))
             ->prependStylesheet($this->basePath('css/bootstrap-theme.min.css'))
             ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
+            ->prependStylesheet($this->basePath('css/Myestilo.css'))
         ?>
 
         <!-- Scripts -->
         <?= $this->headScript()
             ->prependFile($this->basePath('js/bootstrap.min.js'))
             ->prependFile($this->basePath('js/jquery-3.1.0.min.js'))
+           
         ?>
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?= $this->url('home') ?>">
-                        <img src="<?= $this->basePath('img/zf-logo-mark.svg') ?>" height="28" alt="Zend Framework <?= \Application\Module::VERSION ?>"/>&nbsp;Skeleton Application
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?= $this->url('home') ?>">Home</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container">
-            <?= $this->content ?>
-            <hr>
-            <footer>
-                <p>&copy; 2005 - <?= date('Y') ?> by Zend Technologies Ltd. All rights reserved.</p>
-            </footer>
-        </div>
-        <?= $this->inlineScript() ?>
+ <header>
+ <img src= "<?= $this->basePath('img/LUTS.png') ?> " align="left" width="300" alt="">
+
+ <div class="Encabezado">
+      <p> Sistema de Control para  el Seguimiento de Egresados</p>
+
+</div>
+</header>
+
     </body>
+    <footer>
+    <div class="pie de pagina"
+    <ul>
+    <li><img src="<?= $this->basePath('img/logo_sep.png') ?>"width="150"alt="">
+    <li><img src="<?= $this->basePath('img/escudo_chiapas.png') ?>"width="150"alt="">
+    <li><img src="<?= $this->basePath('img/chiapas_nos_une.png') ?>"width="150"alt="">
+    <li><img src="<?= $this->basePath('img/coesmer.png') ?>"width="150"alt="">
+    <li><img src="<?= $this->basePath('img/transparencia.png') ?>"width="150"alt="">
+    <li><img src="<?= $this->basePath('img/ecest.png') ?>"width="150"alt="">
+    <li><img src="<?= $this->basePath('img/c_social.png') ?>"width="150"alt="">
 </html>

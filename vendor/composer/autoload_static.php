@@ -13,7 +13,6 @@ class ComposerStaticInit064fba4b8af9a67e01d2a10a119d36d5
             'Zend\\Validator\\' => 15,
             'Zend\\Uri\\' => 9,
             'Zend\\Stdlib\\' => 12,
-            'Zend\\SkeletonInstaller\\' => 23,
             'Zend\\ServiceManager\\' => 20,
             'Zend\\Router\\' => 12,
             'Zend\\Mvc\\' => 9,
@@ -33,6 +32,10 @@ class ComposerStaticInit064fba4b8af9a67e01d2a10a119d36d5
         'I' => 
         array (
             'Interop\\Container\\' => 18,
+        ),
+        'E' => 
+        array (
+            'Egresado\\' => 9,
         ),
         'A' => 
         array (
@@ -57,10 +60,6 @@ class ComposerStaticInit064fba4b8af9a67e01d2a10a119d36d5
         'Zend\\Stdlib\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-stdlib/src',
-        ),
-        'Zend\\SkeletonInstaller\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/zendframework/zend-skeleton-installer/src',
         ),
         'Zend\\ServiceManager\\' => 
         array (
@@ -113,6 +112,10 @@ class ComposerStaticInit064fba4b8af9a67e01d2a10a119d36d5
         'Interop\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
+        ),
+        'Egresado\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/module/Egresado/src',
         ),
         'Application\\' => 
         array (
