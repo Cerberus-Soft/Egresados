@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <?= $this->headTitle('ZF Skeleton Application')->setSeparator(' - ')->setAutoEscape(false) ?>
+        <?= $this->headTitle('Seguimiento de Egresados')->setSeparator(' - ')->setAutoEscape(false) ?>
 
         <?= $this->headMeta()
             ->appendName('viewport', 'width=device-width, initial-scale=1.0')
@@ -26,24 +26,54 @@
         ?>
     </head>
     <body>
- <header>
- <img src= "<?= $this->basePath('img/LUTS.png') ?> " align="left" width="300" alt="">
+     <header>
+        <img src= "<?= $this->basePath('img/LUTS.png') ?> " align="left" width="300" alt="">
+        <div class="Encabezado">
+          <p> Sistema de Control para  el Seguimiento de Egresados</p>
+        </div>
+    </header>
+    <section class="centro">
+        <section class= "texto">
+            
+        </section>
+        <section class= "texto2">
+            
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
 
- <div class="Encabezado">
-      <p> Sistema de Control para  el Seguimiento de Egresados</p>
+   <footer> 
+    <div class="imagenes">
+    <section class="imagenes">
+        <ul>
+            <li>
+            <img src="<?= $this->basePath('img/logo_sep.png') ?>"width="150"alt=""></li>
+            <li><img src="<?= $this->basePath('img/escudo_chiapas.png') ?>"width="150"alt=""></li>
+            <li><img src="<?= $this->basePath('img/chiapas_nos_une.png') ?>"width="150"alt=""></li>
+            <li><img src="<?= $this->basePath('img/coesmer.png') ?>"width="150"alt=""></li>
+            <li><img src="<?= $this->basePath('img/transparencia.png') ?>"width="150"alt=""></li>
+            <li><img src="<?= $this->basePath('img/ecest.png') ?>"width="150"alt=""></li>
+            <li><img src="<?= $this->basePath('img/c_social.png') ?>"width="150"alt=""></li>
+        </ul>
+    </section>
+    <section class="redes">
+        <table>
+            <tr>
+                <td>MAPA DEL SITIO</td>
+                <td>Twitter</td>
+                <td>Facebook</td>
+        </table>
+        <hr>
+    </section>
+    </div>
 
-</div>
-</header>
+    <section class="pie">
+    <p align="center" class="piedepagina">Universidad Tecnológica de la Selva <br>
+    Entronque Toniná Km.0.5 Carretera Ocosingo-Altamirano,Ocosingo, Chiapas, México C.P. 29950 <br>
+    Teléfonos (52)(919)673090,71,72,6731290,93</p>
+    </section>
+    </footer>
 
-    </body>
-    <footer>
-    <div class="pie de pagina"
-    <ul>
-    <li><img src="<?= $this->basePath('img/logo_sep.png') ?>"width="150"alt="">
-    <li><img src="<?= $this->basePath('img/escudo_chiapas.png') ?>"width="150"alt="">
-    <li><img src="<?= $this->basePath('img/chiapas_nos_une.png') ?>"width="150"alt="">
-    <li><img src="<?= $this->basePath('img/coesmer.png') ?>"width="150"alt="">
-    <li><img src="<?= $this->basePath('img/transparencia.png') ?>"width="150"alt="">
-    <li><img src="<?= $this->basePath('img/ecest.png') ?>"width="150"alt="">
-    <li><img src="<?= $this->basePath('img/c_social.png') ?>"width="150"alt="">
+
+</body>
 </html>

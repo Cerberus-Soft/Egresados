@@ -1,7 +1,6 @@
 
 *{
- margin: 0;
- padding: 0;   
+ margin: 0; 
 padding-top: 0;
 }
 header{
@@ -16,4 +15,50 @@ header{
 .Encabezado
 {
    font-size: 4em;
+}
+main{
+
+}
+
+table{
+	width: 100%;
+	color: #ffffff;
+}
+table td{
+	padding: 20px;
+}
+footer{
+	background: #303030;
+	padding: 10px 0px;
+	text-align: center;
+}
+
+footer .imagenes  ul{
+	list-style: none;
+}
+
+footer .imagenes ul li{
+	float: left;
+	padding: 10px 20px;
+	display: block;
+}
+footer .piedepagina {
+	font-size: .8em;
+	color:#ffffff;
+	display: block;
+}
+footer .piedepagina{
+	margin: 30px auto;
+	font-size: .8em;
+	display: inline-block;
+}
+
+div{
+	width: 100%;
+}
+img{
+	height:auto; ;
+	width:100 ;
+	margin:auto;
+	display: block;
 }
