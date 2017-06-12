@@ -1,50 +1,61 @@
 body {
-    background:#303030;
+
+	background-image: url('../img/login.jpg');
+	margin: 0%;
 }
 
-.main .Logotipo{
+/*.main .Logotipo{
 	width: 60%;
 	float: left;
-	background:rgb(86, 209, 234);
+	background: #EFF5FA;
 	text-align: center;
 	padding: 4.53%;
-}
+}*/
 .main .formulario{
-	width: 40%
-	padding:50%;
+	width: 50%;
+	padding: 50%;
 	float: left;
-	background: rgb(86, 209, 234);
+	background: #000000;
 	display: block;
 	box-sizing: border-box;
+	
 }
 
-.form-login{
-	width:100%
-	background:rgba(220,234,245,.3);
-	margin:auto;
-	padding:4.6em 8.2em;
+.form-login{/*cuadro*/
+	border: 1;
+	border-radius: 70px;
+	width:40%;/*ancho del cuadro login*/
+	background:rgba(220,234,248,.5);
+	margin-top: 10%;
+	margin-left: 29%;
+	padding:8em 0em;
+	display: block;
+	
 }
 .form-login__input{
 	display:block;
-	width:100%;
+	width:40%;
 	margin-bottom:1.5em;
+	margin:auto;
 	border:none;
 	line-height:2.7;
 	border-radius: 6px;
 	text-align: center;
+		
 }
 .form-login__submit{
 	display:block;
 	border-radius: 6px;
-	width:100%;
+	width:40%;
 	background:rgb(27, 134, 190);
 	color: white;
 	border:none;
 	line-height:2;
 	text-transform:uppercase;
 	font-size:1.1em;
-	margin-top: 1em;
+	margin-top: 2em;
 	margin-bottom: 1em;
+	margin-left: 10.5em;
 }
 .form-login__submit:hover{
 	background: rgb(37, 104, 208);
@@ -53,7 +64,7 @@ body {
 .form-login__acceder{
 	text-align:center;
 	display:block;
-	padding-left: :2.5em;
+	padding-left: 2.5em;
 	color:white;
 	text-decoration:none;
 }

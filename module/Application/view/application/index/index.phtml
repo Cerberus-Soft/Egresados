@@ -2,24 +2,23 @@
 ->prependStylesheet($this->basePath('css/login.css'))
 ?>
 <body>
-    <section class="main"> 
-        <section class="Logotipo">
-            <img src="<?= $this->basePath('img/LUTS.png') ?>" width="520" alt ="">
-        </section>
+
         <section class="formulario">
             <form name="form1" method="post" action="" class="form-login">
                  <div>
                   <img src="<?= $this->basePath('img/Usuario.png') ?>" width="35" alt="">
                  </div>
-                  <input name="usuario" id="usuario" type="text" class="form-login__input" placeholder="Usuario o Matricula" autofocus="">
-                  <div>
+                 
+                  <input name="usuario" id="usuario" type="text" class="form-login__input" placeholder="Usuario o Matricula" autofocus=""><br>
+                  </div>
+                  
                   <img src="<?= $this->basePath('img/Llave.png') ?>" width="35" alt="" >
                   </div>
                   <input name="contraseña" size=40 ip= "Password" type="text" class="form-login__input" placeholder="Password" autofocus="">
-                  <input type="checkbox" name="checkbox" value="checkbox">
-                Recordarme la proxima vez
+                 <center> <input type="checkbox" name="checkbox" value="checkbox">
+                Recordarme la proxima vez</center>
                   <input name="Iniciar sesi&oacute;n" type="submit" id="Iniciar sesi&oacute;n" class="form-login__submit" value="Iniciar sesi&oacute;n">
-                 <a href= "#" class="form_acceder">¿No puedes acceder a tu cuenta?</a>
+                <center> <a href= "#" class="form_acceder">¿No puedes acceder a tu cuenta?</a></center>
         </section>
     </section>
 </body>
