@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit064fba4b8af9a67e01d2a10a119d36d5
 {
+    public static $files = array (
+        '34901568a1e26d13dd475cb2c85e0284' => __DIR__ . '/..' . '/zendframework/zend-form/autoload/formElementManagerPolyfill.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'Z' => 
         array (
@@ -18,11 +22,18 @@ class ComposerStaticInit064fba4b8af9a67e01d2a10a119d36d5
             'Zend\\Mvc\\' => 9,
             'Zend\\ModuleManager\\' => 19,
             'Zend\\Loader\\' => 12,
+            'Zend\\InputFilter\\' => 17,
+            'Zend\\I18n\\' => 10,
+            'Zend\\Hydrator\\' => 14,
             'Zend\\Http\\' => 10,
+            'Zend\\Form\\' => 10,
+            'Zend\\Filter\\' => 12,
             'Zend\\EventManager\\' => 18,
             'Zend\\Escaper\\' => 13,
+            'Zend\\Db\\' => 8,
             'Zend\\Config\\' => 12,
             'Zend\\ComponentInstaller\\' => 24,
+            'Zend\\Code\\' => 10,
             'ZF\\DevelopmentMode\\' => 19,
         ),
         'P' => 
@@ -81,9 +92,29 @@ class ComposerStaticInit064fba4b8af9a67e01d2a10a119d36d5
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-loader/src',
         ),
+        'Zend\\InputFilter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-inputfilter/src',
+        ),
+        'Zend\\I18n\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-i18n/src',
+        ),
+        'Zend\\Hydrator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-hydrator/src',
+        ),
         'Zend\\Http\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-http/src',
+        ),
+        'Zend\\Form\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-form/src',
+        ),
+        'Zend\\Filter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-filter/src',
         ),
         'Zend\\EventManager\\' => 
         array (
@@ -93,6 +124,10 @@ class ComposerStaticInit064fba4b8af9a67e01d2a10a119d36d5
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-escaper/src',
         ),
+        'Zend\\Db\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-db/src',
+        ),
         'Zend\\Config\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-config/src',
@@ -100,6 +135,10 @@ class ComposerStaticInit064fba4b8af9a67e01d2a10a119d36d5
         'Zend\\ComponentInstaller\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-component-installer/src',
+        ),
+        'Zend\\Code\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-code/src',
         ),
         'ZF\\DevelopmentMode\\' => 
         array (

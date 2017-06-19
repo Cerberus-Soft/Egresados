@@ -1,5 +1,5 @@
 <?php
-
+namespace Egresado\Model;
 class Egresado
 {
     public $Matricula;
@@ -10,7 +10,7 @@ class Egresado
 
     public function exchangeArray(array $data)
     {
-        $this->Matricula = !empty($data['Matricula']) ? $data['id'] : null;
+        $this->Matricula = !empty($data['Matricula']) ? $data['Matricula'] : null;
         $this->CURP = !empty($data['CURP']) ? $data['CURP'] : null;
         $this->Nombre = !empty($data['Nombre'] ? $data['Nombre'] : null);
         $this->Apellido_Paterno = !empty($data['Apellido_Paterno'] ? $data['Apellido_Paterno'] : null);

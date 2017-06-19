@@ -1,0 +1,31 @@
+
+<?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
+->prependStylesheet($this->basePath('css/Myestilo.css'))
+?>
+<div class="datos_egr">
+<table>
+    <tr> 
+        <th>MATRICULA</th>
+        <th>CURP</th>
+        <th>NOMBRE</th>
+        <th>APELLIDO PATERNO </th>
+        <th>APELLIDO MATERNO </th>
+        <th>MODIFICAR</th>
+        <th>ELIMINAR</th>
+    </tr>
+    <?php foreach($egresados as $egresado): ?>
+    <tr>
+        <td><?= $egresado->Matricula ?></th>
+        <td><?= $egresado->CURP ?></th>
+        <td><?= $egresado->Nombre ?></th>
+        <td><?= $egresado->Apellido_Paterno ?></th>
+        <td><?= $egresado->Apellido_Materno ?></th>
+        <td><a href="<?= "http://".$_SERVER['HTTP_HOST']."/egresado/edEgresado/".$egresado->Matricula?>">
+        <img src="<?=$this->basePath("img/modificar.gif")?>"title="Edicion"></a></td>
+        <td><a href="<?= "http://".$_SERVER['HTTP_HOST']."/egresado/elegresado/".$egresado->Matricula ?>">
+        <img src="<?=$this->basePath("img/eliminar.png")?> "title="Eliminar"></a></td>
+    </tr>
+    <?php endforeach; ?>
+</table>        
+</div>
+</body> 

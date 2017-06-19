@@ -1,10 +1,16 @@
 <?php
+namespace Egresado;
+use Zend\Router\Http\Literal;
+use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
+use Interop\Container\ContainerInterface;
 
 return [
     'controllers' => [
         'factories' => [
-            Controller\EgresadoController::class => InvokableFactory::class,
+            Controller\EgresadoController::class => function(ContainerInterface $sm){
+                return new Controller\EgresadoController($sm);
+            },
         ],
     ],
     //paso 2
@@ -29,7 +35,7 @@ return [
 
     'view_manager' => [
         'template_path_stack' => [
-            'album' => __DIR__ . '/../view',
+            'egresado' => __DIR__ . '/../view',
         ],
     ],
 ];

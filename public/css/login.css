@@ -1,7 +1,8 @@
 body {
 
-	background-image: url('../img/login.jpg');
+	background-image: url('../img/LOGIN.jpeg');
 	margin: 0%;
+	background-size: auto;
 }
 
 /*.main .Logotipo{
@@ -25,7 +26,7 @@ body {
 	border: 1;
 	border-radius: 70px;
 	width:40%;/*ancho del cuadro login*/
-	background:rgba(220,234,248,.5);
+	background:rgba(220,234,248,.9);
 	margin-top: 10%;
 	margin-left: 29%;
 	padding:8em 0em;

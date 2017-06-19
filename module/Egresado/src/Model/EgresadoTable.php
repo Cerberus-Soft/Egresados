@@ -1,6 +1,6 @@
 <?php
 namespace Egresado\Model;
-
+use Zend\Db\TableGateway\TableGateway;
 use RuntimeException;
 use Zend\Db\TableGateway\TableGatewayInterface;
 
@@ -15,45 +15,29 @@ class EgresadoTable
 
     public function fetchAll()
     {
-        return $this->tableGateway->select();
+        $resultset = $this->tableGateway->select();
+        return $resultset;
     }
 
-    public function getEgresado($Matricula)
+    public function egresado($Matricula)
     {
-        $Matricula = (int) $Matricula;
-        $rowset = $this->tableGateway->select(['Matricula' => $Matricula]);
+        $rowset = $this->tableGateway->select(array('Matricuala'=>$Matricula));
         $row = $rowset->current();
-        if (! $row) {
-            throw new RuntimeException(sprintf(
-                'Could not find row with identifier %d',
-                $Matricula
-            ));
+        if (!$row){
+            throw new \Exception("La matricula no existe");
         }
         return $row;
     }
 
-    public function saveEgresado(Egresado $egresado)
+    public function guardar(Egresado $egresado)
     {
-        $data = [
-            'CURP' => $egresado->CURP,
-            'Nombre' => $egresado->Nombre,
+        $data = array(
+            'Matricula' => $egresado->Matricula,
+            'CURP' => $egresado->codigo,
+            'Nombre' => $egresado->nombre,
             'Apellido_Paterno' => $egresado->Apellido_Paterno,
             'Apellido_Materno' => $egresado->Apellido_Materno,
-        ];
-
-        $Matricula = (int) $egresado->Matricula;
-
-        if ($id == 0){
-            $this->tableGateway->insert($data);
-            return;
-        }
-
-        if (! $this->getEgresado($Matricula)){
-            throw new RuntimeException(sprintf(
-                'Cannot update egresado with identifier %d does not exist',
-                $Matricula
-            ));
-        }
-        $this->tableGateway->update($data,['Matricula' => $Matricula]);
+        );
+        $this->tableGateway->insert($data);
     }
 }

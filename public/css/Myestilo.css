@@ -8,17 +8,24 @@ header{
     width: 100%;
     color: #ffffff;
     text-align: center;
-	margin-top: -4.6em;
+	margin-top: 0;
     padding: 1%;
 }
 .Encabezado
 {
    font-size: 4em;
 }
+table .datos_egr{
+
+color: #000000;
+border: 1;
+border-color: #000000;
+
+}
 
 table{
 	width: 100%;
-	color: #ffffff;
+	color: #000000;
 }
 table td{
 	padding: 20px;
@@ -28,7 +35,7 @@ footer{
 	background: #394D5E;
 	padding: 10px 0px;
 	text-align: center;
-	margin-top: -9em;
+	margin-top: 0;
 }
 
 footer .imagenes  ul{

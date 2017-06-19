@@ -1,27 +1,19 @@
 <?php
-
+namespace Egresado\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use Egresado\Model\TablasFactory;
 
-class Egresadocontroller extends AbstractActionController
+class EgresadoController extends AbstractActionController
 {
-    public function index_egresado_Action()
+    private $egresadoTable;
+    
+    public function __construct($sm)
     {
-
+        $this->egresadoTable = (new TablasFactory($sm))->getTableEgresado();
     }
-
-    public function editar_dts_personales_Action()
+    public function listaAction()
     {
-
-    }
-
-    public function editar_dts_profesionales_Action()
-    {
-
-    }
-
-    public function llenar_encuesta_Action()
-    {
-        
+        return new ViewModel(['egresados' => $this->egresadoTable->fetchAll(),]);
     }
 }
